@@ -6,7 +6,8 @@ http://www.kth.se/blogs/1337/2013/02/verifying-performance-of-jasig-cas-with-apa
 
 This files are copies of files that we actually use, but modified for 
 a more generic CAS configuration. They should work, but I've not verified
-that they do after these modifications.
+that they still do after these modifications. You will likely want to 
+tweak everything to your taste anyway.
 
 
 ## Files ##
@@ -36,8 +37,11 @@ the first page of the suite in the JMeter gui.
 
 ## Running ##
 
-Assuming all failes (including users.csv) Run the test suite with the command:
+Assuming all files (including users.csv) Run the test suite with the command:
 
 ```
 jmeter -p localhost.properties -t GenericCasPerfTest.jmx
 ```
+
+Cheers,
+/Fredrik
